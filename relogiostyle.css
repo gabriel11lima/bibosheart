@@ -1,42 +1,59 @@
-@keyframes cursiveMotion {
-    0%, 100% {
-        transform: rotate(-2deg);
-    }
-    50% {
-        transform: rotate(2deg);
-    }
-}
-
 .relogio {
-    position: fixed;
-    top: 596px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 24px 92px;
+    position: fixed; /* Fixa a posição do elemento na tela */
+    top: 596px; /* Define a posição do elemento a partir do topo da tela */
+    left: 50%; /* Centraliza o elemento horizontalmente na tela */
+    transform: translateX(-50%); /* Ajusta a centralização do elemento */
+    padding: 24px 92px; /* Define o espaçamento interno do elemento */
     font-family: 'Great Vibes', Arial, sans-serif; /* Fonte com um toque mais suave */
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
+    font-size: 30px; /* Tamanho da fonte */
+    font-weight: bold; /* Define a fonte como negrito */
+    color: #ffffff; /* Cor do texto branca */
     
-    
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 7, 44, 0.4); /* Fundo rosa claro com transparência */
-    border: 3px solid rgba(123, 0, 62, 0.5); /* Borda rosa suave */
-    border-radius: 20px;
-    text-align: center;
-    width: fit-content;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais marcante */
-    
+    backdrop-filter: blur(100px); /* Aplica um desfoque no fundo */
+    background-color: #0d1d31; /* Fundo rosa claro com transparência */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    width: fit-content; /* Ajusta a largura do elemento ao conteúdo */
     animation: fadeInUp 1.5s ease-out; /* Animação de entrada suave */
 }
 
+
+
 .relogio span {
-    display: inline-block;
-    margin: 0 8px;
-    animation: cursiveMotion 3s infinite ease-in-out; /* Movimento cursivo */
+    display: inline-block; /* Exibe o conteúdo em linha, mas como bloco, permitindo margens */
+    margin: 7px;    
 }
 
 .tempo-anos, .tempo-meses, .tempo-dias {
-    color: #ffffff;
-    font-weight: bold;
+    color: #ffffff; /* Define a cor do texto como branca */
+    font-weight: bold; /* Deixa o texto em negrito */
+
+}
+
+@media (max-width:450px){
+    .relogio{
+        position: fixed; /* Fixa a posição do elemento na tela */
+        top: 650px; /* Define a posição do elemento a partir do topo da tela */
+        left: 50%; /* Centraliza o elemento horizontalmente na tela */
+        transform: translateX(-50%); /* Ajusta a centralização do elemento */
+        width: 210px;
+        height: 100px;
+        padding: 30px 100px; /* Define o espaçamento interno do elemento */
+        font-size: 24px; /* Tamanho da fonte */  
+        margin: 5px;
+    }
+    .relogio span {
+        display: inline-block; /* Exibe o conteúdo em linha, mas como bloco, permitindo margens */
+        margin: 7px;    
+    }
+    .relogio p{
+        position: fixed; /* Fixa a posição do elemento na tela */
+        top: 50px; /* Define a posição do elemento a partir do topo da tela */
+        left: 50%; /* Centraliza o elemento horizontalmente na tela */
+        transform: translateX(-50%); /* Ajusta a centralização do elemento */
+        font-family: 'Great Vibes', Arial, sans-serif; /* Fonte com um toque mais suave */
+        font-size: 24px; /* Tamanho da fonte */
+        font-weight: bold; /* Define a fonte como negrito */
+        color: #ffffff; /* Cor do texto branca */
+        text-align: center;
+    } 
 }

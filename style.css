@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .slider {
@@ -36,7 +37,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .slide img {
@@ -44,7 +44,7 @@ body {
     width: 360px; /* Ajusta a largura para preencher o slide */
     height: 640px; /* Ajusta a altura para preencher o slide */
     object-fit: cover; /* Mantém a proporção da imagem enquanto preenche o slide */
-
+    
 }
 
 .manual-navigation {

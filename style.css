@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative; /* Torna o slider o contexto para o posicionamento absoluto */
+    margin: 0 auto;
+    width: 360px;
+    height: 640px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    width: 1500%; /* 15 slides, então 100% * 15 = 1500% */
+    height: 100%; /* Alinha a altura com o slider */
+    display: flex;
+    transition: margin-left 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%; /* Cada slide ocupa 100% da largura do slider */
+    flex-shrink: 0; /* Impede que o slide encolha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slide img {
+    border-radius: 10px;
+    width: 360px; /* Ajusta a largura para preencher o slide */
+    height: 640px; /* Ajusta a altura para preencher o slide */
+    object-fit: cover; /* Mantém a proporção da imagem enquanto preenche o slide */
+
+}
+
+.manual-navigation {
+    position: absolute;
+    bottom: 10px; /* Coloca os botões 10px acima da parte inferior do slider */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza os botões horizontalmente */
+    width: auto; /* Remove a largura fixa para que o conteúdo defina a largura */
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+
+/* Controles dos slides */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+/* Continue adicionando controles para cada slide */
+#radio5:checked ~ .first {
+    margin-left: -400%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -500%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -600%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -700%;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -800%;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -900%;
+}
+
+#radio11:checked ~ .first {
+    margin-left: -1000%;
+}
+
+#radio12:checked ~ .first {
+    margin-left: -1100%;
+}
+
+#radio13:checked ~ .first {
+    margin-left: -1200%;
+}
+
+#radio14:checked ~ .first {
+    margin-left: -1300%;
+}
+
+#radio15:checked ~ .first {
+    margin-left: -1400%;
+}
+
+

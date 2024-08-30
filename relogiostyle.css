@@ -1,0 +1,42 @@
+@keyframes cursiveMotion {
+    0%, 100% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+.relogio {
+    position: fixed;
+    top: 596px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 24px 92px;
+    font-family: 'Great Vibes', Arial, sans-serif; /* Fonte com um toque mais suave */
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 7, 44, 0.4); /* Fundo rosa claro com transparência */
+    border: 3px solid rgba(123, 0, 62, 0.5); /* Borda rosa suave */
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais marcante */
+    
+    animation: fadeInUp 1.5s ease-out; /* Animação de entrada suave */
+}
+
+.relogio span {
+    display: inline-block;
+    margin: 0 8px;
+    animation: cursiveMotion 3s infinite ease-in-out; /* Movimento cursivo */
+}
+
+.tempo-anos, .tempo-meses, .tempo-dias {
+    color: #ffffff;
+    font-weight: bold;
+}

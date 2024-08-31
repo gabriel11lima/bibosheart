@@ -1,6 +1,6 @@
 .relogio {
     position: fixed; /* Fixa a posição do elemento na tela */
-    top: 596px; /* Define a posição do elemento a partir do topo da tela */
+    top: auto; /* Define a posição do elemento a partir do topo da tela */
     left: 50%; /* Centraliza o elemento horizontalmente na tela */
     transform: translateX(-50%); /* Ajusta a centralização do elemento */
     padding: 24px 92px; /* Define o espaçamento interno do elemento */
@@ -9,8 +9,7 @@
     font-weight: bold; /* Define a fonte como negrito */
     color: #ffffff; /* Cor do texto branca */
     
-    backdrop-filter: blur(100px); /* Aplica um desfoque no fundo */
-    background-color: #0d1d31; /* Fundo rosa claro com transparência */
+    
     text-align: center; /* Centraliza o texto dentro do elemento */
     width: fit-content; /* Ajusta a largura do elemento ao conteúdo */
     animation: fadeInUp 1.5s ease-out; /* Animação de entrada suave */
@@ -23,6 +22,19 @@
     margin: 7px;    
 }
 
+.relogio p{
+    position: fixed; /* Fixa a posição do elemento na tela */
+    top: 50px; /* Define a posição do elemento a partir do topo da tela */
+    left: 52%; /* Centraliza o elemento horizontalmente na tela */
+    transform: translateX(-50%); /* Ajusta a centralização do elemento */
+    font-family: 'Great Vibes', Arial, sans-serif; /* Fonte com um toque mais suave */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Define a fonte como negrito */
+    color: #ffffff; /* Cor do texto branca */
+    text-align: center;
+    border: #0c0d13; 
+} 
+
 .tempo-anos, .tempo-meses, .tempo-dias {
     color: #ffffff; /* Define a cor do texto como branca */
     font-weight: bold; /* Deixa o texto em negrito */
@@ -32,7 +44,7 @@
 @media (max-width:450px){
     .relogio{
         position: fixed; /* Fixa a posição do elemento na tela */
-        top: 650px; /* Define a posição do elemento a partir do topo da tela */
+        top: 70px; /* Define a posição do elemento a partir do topo da tela */
         left: 50%; /* Centraliza o elemento horizontalmente na tela */
         transform: translateX(-50%); /* Ajusta a centralização do elemento */
         width: 210px;
@@ -40,6 +52,7 @@
         padding: 30px 100px; /* Define o espaçamento interno do elemento */
         font-size: 24px; /* Tamanho da fonte */  
         margin: 5px;
+    
     }
     .relogio span {
         display: inline-block; /* Exibe o conteúdo em linha, mas como bloco, permitindo margens */
@@ -47,8 +60,8 @@
     }
     .relogio p{
         position: fixed; /* Fixa a posição do elemento na tela */
-        top: 50px; /* Define a posição do elemento a partir do topo da tela */
-        left: 50%; /* Centraliza o elemento horizontalmente na tela */
+        top: 40px; /* Define a posição do elemento a partir do topo da tela */
+        left: 52%; /* Centraliza o elemento horizontalmente na tela */
         transform: translateX(-50%); /* Ajusta a centralização do elemento */
         font-family: 'Great Vibes', Arial, sans-serif; /* Fonte com um toque mais suave */
         font-size: 24px; /* Tamanho da fonte */

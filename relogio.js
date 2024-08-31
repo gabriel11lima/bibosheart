@@ -33,7 +33,7 @@ function atualizarRelogio() {
     }
     texto += `<span class="tempo-meses">${resultado.meses} ${resultado.meses > 1 ? 'meses' : 'mês'}</span> e `;
     texto += `<span class="tempo-dias">${resultado.dias} ${resultado.dias > 1 ? 'dias' : 'dia'}</span>`;
-    texto += '<p>de muito amor! ✨🤍</p>'
+    texto += '<p>de muito amor!✨🤍</p>'
     relogioDiv.innerHTML = texto;
 }
 

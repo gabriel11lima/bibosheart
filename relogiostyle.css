@@ -41,7 +41,7 @@
 
 }
 
-@media (max-width:450px){
+@media (max-width:480px){
     .relogio{
         position: fixed; /* Fixa a posição do elemento na tela */
         top: 70px; /* Define a posição do elemento a partir do topo da tela */
